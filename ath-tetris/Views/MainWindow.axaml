@@ -1,20 +1,40 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:ath_tetris.ViewModels"
+        xmlns:v="using:ath_tetris.Views"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d"
+        Width="425" Height="550"
+        CanResize="False"
         x:Class="ath_tetris.Views.MainWindow"
-        x:DataType="vm:MainWindowViewModel"
-        Icon="/Assets/avalonia-logo.ico"
-        Title="ath_tetris">
-
+        x:DataType="v:MainWindow"
+        Title="Tetris"
+        KeyDown="KeyDownHandler">
     <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:MainWindowViewModel/>
+        <v:MainWindow />
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Grid ColumnDefinitions="3*, 2*">
+        <Canvas Name="Board" Background="LightGray" Grid.ColumnSpan="2" />
+        
+        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock Text="TETRIS" TextAlignment="Center" Foreground="Black" FontSize="24" />
+            
+            <TextBlock Text="SCORE" TextAlignment="Center" Foreground="Black" Margin="0, 20, 0, 0" />
+            <TextBlock Name="Score" TextAlignment="Center" Foreground="Black" />
 
+            <StackPanel Name="BlockPreviewsPanel">
+                <TextBlock Text="Aktualny" TextAlignment="Center" Foreground="Black" Margin="0, 20, 0, 0" />
+                <Canvas Name="CurrBlock" Height="100" Width="100" Margin="0,10" />
+            
+                <TextBlock Text="Następny" TextAlignment="Center" Foreground="Black" Margin="0, 20, 0, 0" />
+                <Canvas Name="NextBlock" Height="100" Width="100" Margin="0,10"  />
+            </StackPanel>
+            
+            <StackPanel Name="GameOverPanel">
+                <TextBlock Text="KONIEC GRY" FontSize="24" TextAlignment="Center" Foreground="Black" Margin="0, 20, 0, 0" />
+                <Button Content="Nowa gra" Click="StartNewGame" Background="Black" Foreground="LightGray" Margin="0, 10" HorizontalAlignment="Center" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
 </Window>

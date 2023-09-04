@@ -1,0 +1,12 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=192da793_002D8f2f_002D4ffa_002Dac95_002Da9f9f9a5a540/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CanCreateBlockColorAttributeWithValidHex" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::1380C8BE-083A-4294-A995-BBBC98248118::net7.0::app_tests.BlockColorTests.CanCreateBlockColorAttributeWithValidHex&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4172b249_002De0a3_002D45f1_002D8cd0_002D08e8b9e50816/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CanCreateBlockColorAttributeWithInvalidHex" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="D:\development\projects\ath-tetris\app-tests" Presentation="&amp;lt;app-tests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9242cc38_002Dc7d8_002D4553_002D8896_002D321014fcff0f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CanCreateBlockColorAttributeWithInvalidHex #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="D:\development\projects\ath-tetris\app-tests" Presentation="&amp;lt;app-tests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
